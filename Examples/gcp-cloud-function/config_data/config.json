@@ -1,0 +1,55 @@
+{
+    "vuln_scanner":{
+        "hostname": "vuln_scannerapi.vuln_scanner.com",
+        "username": "",
+        "password": ""
+    },
+    "gcp":{
+        "bucket_id":"",
+        "project_id":"",
+        "org_id":"",
+        "key_path": {
+            "secret_manager": "thycotic",
+            "config_header": "thycotic",
+            "secret_id":"1234",
+            "secret_type": "gcp-key"
+            }
+    },
+    "thycotic": {
+        "tenant": "",
+        "username": "",
+        "password": {
+            "secret_manager": "gcp",
+            "project_id": "",
+            "secret_id": "",
+            "version_id": "latest"
+            },
+        "tld": "eu"
+    },
+    "azure": {
+        "subscription_exclusions": ["Access to Azure Active Directory","Acceso a Azure Active Directory"]
+    },
+    "azure-1": {
+        "location": "",
+        "tenant_id": "",
+        "client_id": {
+            "secret_manager": "thycotic",
+            "secret_id":"1234",
+            "secret_type": "username",
+            "config_header": "thycotic"
+        },
+        "client_secret": {
+            "secret_manager": "thycotic",
+            "secret_id":"1234",
+            "secret_type": "password",
+            "config_header": "thycotic"
+        },
+        "subscription_exclusions": ["Access to Azure Active Directory","Acceso a Azure Active Directory"]
+    },
+    "environment":"gcp",
+    "approved_dns": [],
+    "dry_run": "False",
+    "datapath": "/tmp",
+    "proxy": "",
+    "log_level": "INFO"
+}

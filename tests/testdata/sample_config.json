@@ -1,0 +1,61 @@
+{
+    
+    "gcp":{
+        "bucket_id":"",
+        "projet_id":"",
+        "org_id":"",
+        "key_path": {
+            "secret_manager": "thycotic",
+            "config_header": "thycotic",
+            "secret_id":"1234",
+            "secret_type": "gcp-key"
+            }
+    },
+    "azure-address": {
+        "tenant_id": "",
+        "subscription_id": "",
+        "subscription_exclusions": ["Access to Azure Active Directory","Acceso a Azure Active Directory"]
+    },
+    "azure-lb": {
+        "tenant_id": "",
+        "subscription_id": "",
+        "subscription_exclusions": ["Access to Azure Active Directory","Acceso a Azure Active Directory"]
+    },
+    "azure-nat": {
+        "tenant_id": "",
+        "subscription_id": "",
+        "subscription_exclusions": ["Access to Azure Active Directory","Acceso a Azure Active Directory"]
+    },
+    "azure": {
+        "subscription_exclusions": ["Access to Azure Active Directory","Acceso a Azure Active Directory"]
+    },
+    "azure-1": {
+        "location": "asfdg",
+        "tenant_id": "",
+        "client_id": {
+            "secret_manager": "thycotic",
+            "secret_id":"1234",
+            "secret_type": "username",
+            "config_header": "thycotic"
+        },
+        "client_secret": {
+            "secret_manager": "thycotic",
+            "secret_id":"1234",
+            "secret_type": "password",
+            "config_header": "thycotic"
+        },
+        "subscription_exclusions": ["Access to Azure Active Directory","Acceso a Azure Active Directory"]
+    },
+    "thycotic": {
+        "tenant": "",
+        "username": "",
+        "password": "",
+        "tld": "eu"
+    },
+    "approved_dns": ["test.com","test1.cloud"],
+    "environment":"local",
+    "secretmanager":"local",
+    "dry_run": "TRUE",
+    "proxy": "",
+    "log_level": "DEBUG"
+}

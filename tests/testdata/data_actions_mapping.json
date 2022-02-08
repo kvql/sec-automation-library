@@ -1,0 +1,52 @@
+{
+    "commands": {
+        "vuln_scanner_asset_management": {
+            "datatypes":["vuln_scanner_asset_data"]
+        },
+        "update_public_exposure": {
+            "app":"vulnmgmt",
+            "datatypes": ["gcp_exposure_data","azure_exposure_data"]
+        }
+    },
+    "datatypes": { 
+        "gcp_exposure_data": {
+            "app": "gcp_data",
+            "dataformat": "public_exposure"
+        },
+        "azure_exposure_data": {
+            "app": "azure_data",
+            "dataformat": "public_exposure"
+        },
+        "vuln_scanner_asset_data": {
+            "app": "vuln_scanner_data",
+            "dataformat": "None"
+        }
+    },
+    "dataformats": {
+        "public_exposure": {
+            "location": "",
+            "lb_profiles":[
+                {
+                    "ports":[],
+                    "protocol":"",
+                    "addresses": [],
+                    "dns":{}
+                }
+            ],
+            "full_scan_profile":{
+                "addresses":[],
+                "dns":{}
+            },
+            "unknown":{
+                "addresses": [],
+                "dns":{}
+            },
+            "app_profile":{
+                "ports":[],
+                "protocol":"",
+                "addresses": [],
+                "dns":{}
+            }
+        }
+    }
+}

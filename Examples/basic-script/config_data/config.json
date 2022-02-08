@@ -1,0 +1,24 @@
+{
+    "vuln_scanner":{
+        "hostname": "vuln_scannerapi.vuln_scanner.eu",
+        "username": "",
+        "password": {
+            "secret_manager": "thycotic",
+            "config_header": "thycotic",
+            "secret_id":"1234",
+            "secret_type": "password"
+        }
+    },
+    "thycotic": {
+        "tenant": "",
+        "username": "",
+        "password": "",
+        "tld": "eu"
+    },
+    "environment":"gcp",
+    "approved_dns": [],
+    "dry_run": "False",
+    "datapath": "/tmp",
+    "proxy": "",
+    "log_level": "INFO"
+}

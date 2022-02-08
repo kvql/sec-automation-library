@@ -1,0 +1,45 @@
+{
+    "commands": {
+        "update_public_exposure": {
+            "app":"app.vulnmgmt",
+            "datatypes": ["gcp_exposure_data","azure_exposure_data"]
+
+    },
+    "datatypes": { 
+        "gcp_exposure_data": {
+            "app": "N/A",
+            "dataformat": "public_exposure"
+        },
+        "azure_exposure_data": {
+            "app": "N/A",
+            "dataformat": "public_exposure"
+        }
+    },
+    "dataformats": {
+        "public_exposure": {
+            "location": "",
+            "lb_profiles":[
+                {
+                    "ports":[],
+                    "protocol":"",
+                    "addresses": [],
+                    "dns":{}
+                }
+            ],
+            "full_scan_profile":{
+                "addresses":[],
+                "dns":{}
+            },
+            "unknown":{
+                "addresses":[],
+                "dns":{}
+            },
+            "app_profile":{
+                "ports":[],
+                "protocol":"",
+                "addresses": [],
+                "dns":{}
+            }
+        }
+    }
+}

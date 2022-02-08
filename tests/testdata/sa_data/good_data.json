@@ -1,0 +1,1 @@
+{"datatype": "gcp_exposure_data", "page": 0, "totalpages": 0, "data": {"location": "", "lb_profiles": [], "full_scan_profile": {"addresses": [], "dns": {}}, "unknown": {"addresses": [], "dns": {}}, "app_profile": {"ports": ["80", "443"], "protocol": "TCP", "addresses": [], "dns": {}}}}
